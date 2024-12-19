@@ -1,0 +1,436 @@
+:root{
+    font-size: 18px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    line-height: 1.5;
+}
+
+/*courtesy of gradient-animator.com */
+
+.header-container {
+    background: linear-gradient(240deg, #f8845d, #ffe7a9, #d6dfaa);
+    background-size: 600% 600%;
+
+    -webkit-animation: HeaderGradient 21s ease infinite;
+    -moz-animation: HeaderGradient 21s ease infinite;
+    animation: HeaderGradient 21s ease infinite;
+}
+
+@-webkit-keyframes HeaderGradient {
+    0%{background-position:0% 75%}
+    50%{background-position:100% 26%}
+    100%{background-position:0% 75%}
+}
+@-moz-keyframes HeaderGradient {
+    0%{background-position:0% 75%}
+    50%{background-position:100% 26%}
+    100%{background-position:0% 75%}
+}
+@keyframes HeaderGradient {
+    0%{background-position:0% 75%}
+    50%{background-position:100% 26%}
+    100%{background-position:0% 75%}
+}
+
+.header-container {
+    display: flex;
+    flex-direction: row;
+    height: 120px;
+    margin-top: 20px;
+    margin-bottom: 5px;
+    position: sticky; /* sticky, duh */
+    top: 0; /* Makes it stick to the top */
+    z-index: 1000; /* Ensures it stays above other content */
+}
+
+.logo-container {
+    width: 100px;
+}
+
+.logo-image {
+    width: 100px;
+    height: 100px;
+    align-items:left;
+    padding: 10px;
+    cursor: pointer; /* Ensures the cursor changes to a pointer */
+}
+
+.navigation-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 15px;
+    margin-right: 10px;
+    padding: 20px;
+    align-items: center;
+}
+
+/* hero and sub-hero/banner sections */
+
+.hero-section {
+    display:flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    padding: 65px;
+    background-color: #e8b7a6;
+    position: relative;
+}
+
+.text-overlay-one {
+    position: absolute; /* Position text over the image */
+    top: 50%; /* Vertically center the text */
+    left: 40%; /* Horizontally center the text */
+    transform: translate(-50%, -50%); /* Adjust for the text's own dimensions */
+    color: #f8845d; /* Text color */
+    padding: 10px 20px; /* Add padding around the text */
+    font-size: 64px; /* Adjust font size */
+    text-shadow: 
+    -2px -2px 0 black,  /* Top-left shadow */
+    2px -2px 0 black,   /* Top-right shadow */
+    -2px 2px 0 black,   /* Bottom-left shadow */
+    2px 2px 0 black;    /* Bottom-right shadow */
+  }
+
+  .text-overlay-two {
+    position: absolute; /* Position text over the image */
+    top: 40%; /* Vertically center the text */
+    left: 40%; /* Horizontally center the text */
+    transform: translate(-50%, -50%); /* Adjust for the text's own dimensions */
+    color: #f8845d; /* Text color */
+    padding: 10px 20px; /* Add padding around the text */
+    font-size: 56px; /* Adjust font size */
+    text-shadow: 
+    -2px -2px 0 black,  /* Top-left shadow */
+    2px -2px 0 black,   /* Top-right shadow */
+    -2px 2px 0 black,   /* Bottom-left shadow */
+    2px 2px 0 black;    /* Bottom-right shadow */
+  }
+
+  .text-overlay-three {
+    position: absolute; /* Position text over the image */
+    top: 40%; /* Vertically center the text */
+    left: 40%; /* Horizontally center the text */
+    transform: translate(-50%, -50%); /* Adjust for the text's own dimensions */
+    color: #ffffff; /* Text color */
+    padding: 10px 20px; /* Add padding around the text */
+    font-size: 56px; /* Adjust font size */
+    text-shadow: 
+    -2px -2px 0 black,  /* Top-left shadow */
+    2px -2px 0 black,   /* Top-right shadow */
+    -2px 2px 0 black,   /* Bottom-left shadow */
+    2px 2px 0 black;    /* Bottom-right shadow */
+  }
+
+.image-seven {
+    margin: auto; /* centers content */
+}
+
+.image-eight {
+    margin: auto;
+}
+
+.image-nine {
+    margin: auto;
+}
+
+.image-ten {
+    margin: auto;
+}
+
+.image-eleven {
+    margin: auto;
+}
+
+
+
+
+/* picture-text sections, main page */
+
+.pictureandtext-one {
+    display:flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    padding: 65px;
+    background-color: #f8845d;
+    justify-content: center;
+}
+
+.picturetext-box-one {
+    padding: 20px;
+    background-color: #ffe7a9;
+}
+
+.pictureandtext-two {
+    display:flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    padding: 65px;
+    background-color: #e8b7a6;
+    justify-content: center;
+}
+
+.picturetext-box-two {
+    background-color: #d6dfaa;
+    padding: 20px;
+}
+
+.doublepic-box {
+    display:flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    padding: 65px;
+    background-color: #f8845d;
+    justify-content: center;
+    position: relative;
+}
+
+.text-overlay-four {
+    position: absolute; /* Position text over the image */
+    top:50%;
+    left: 20%; /* Horizontally center the text */
+    transform: translate(-50%, -50%); /* Adjust for the text's own dimensions */
+    color: #ffffff; /* Text color */
+    padding: 10px 20px; /* Add padding around the text */
+    font-size: 30px; /* Adjust font size */
+    text-shadow: 
+    -2px -2px 0 black,  /* Top-left shadow */
+    2px -2px 0 black,   /* Top-right shadow */
+    -2px 2px 0 black,   /* Bottom-left shadow */
+    2px 2px 0 black;    /* Bottom-right shadow */
+  }
+
+/*
+
+justify content does it here, so not needed!
+
+.image-three {
+    margin: auto;
+}
+
+.image-four {
+    margin: auto;
+}
+
+*/
+
+.doubletext-box {
+    display:flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    padding: 65px;
+    background-color: #e8b7a6;
+    justify-content: center;
+}
+
+.doubletext-one {
+    background-color: #d6dfaa;
+    padding: 20px;
+}
+
+.doubletext-two {
+    padding: 20px;
+    background-color: #ffe7a9;
+}
+
+
+
+img {
+    max-width: 100%; /* Makes the image scale down relative to its container */
+    height: auto;    /* Maintains the aspect ratio of the image */
+    display: block;  /* Removes any default inline spacing (optional) */
+}
+
+.button-one {
+    background-color: #d6dfaa;
+    padding: 20px;
+    height: 50px;
+    width: 100px;
+    font-size: 18px;
+    
+}
+
+.button-two {
+    background-color: #ffe7a9;
+    padding: 20px;
+    height: 50px;
+    width: 100px;
+    font-size: 18px;
+    
+}
+
+/* Get There */
+
+.getthere-map {
+    display:flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    padding: 65px;
+    background-color: #f8845d;
+    justify-content: center;
+}
+
+.singletext-box {
+    display:flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    padding: 65px;
+    background-color: #e8b7a6;
+    justify-content: center;
+}
+
+.singletext-one {
+    background-color: #d6dfaa;
+    padding: 20px;
+}
+
+
+
+
+/* Town Map */
+
+.townmap-one {
+    display:flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    padding: 65px;
+    background-color: #f8845d;
+    justify-content: center;
+}
+
+.townmap-two {
+    display:flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    padding: 65px;
+    background-color: #e8b7a6;
+    justify-content: center;
+}
+
+.townmap-three {
+    display:flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    padding: 65px;
+    background-color: #f8845d;
+    justify-content: center;
+}
+
+.image-twelve {
+    margin: auto;
+}
+.image-thirteen {
+    margin: auto;
+}
+.image-fourteen {
+    margin: auto;
+}
+
+.singletext-box {
+    display:flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    padding: 65px;
+    background-color: #e8b7a6;
+    justify-content: center;
+}
+
+.singletext-one {
+    background-color: #d6dfaa;
+    padding: 20px;
+}
+
+/* Mural Gallery */
+
+.mural-mapandlinks {
+    display:flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    padding: 65px;
+    background-color: #f8845d;
+    justify-content: center;
+}
+
+#popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+#popup img {
+    max-width: 90%;
+    max-height: 90%;
+}
+
+.image-button {
+    background-color: #d6dfaa;
+    padding: 20px;
+    height: 75px;
+    width: 200px;
+    font-size: 18px;
+}
+
+
+/* ------------ FAT FOOTER --------------- */
+.fat-footer {
+    
+    background-color: #f8845d;
+}
+
+.fat-footer-container {
+    display: flex; /* children behave like a flexbox */
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+    gap: 20px;
+    background-color: #f8845d;
+
+}
+
+.fat-footer-container .contact-info {
+    background-color: #ffe7a9;
+}
+
+.about-us,
+.footer-links {
+    width: 250px;
+}
+
+/* samsung phones 360px vw, iphone 6 onwards 375px vw  */
+
+.contact-info {
+    width: 330px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* ------- FAT FOOTER END ------------ */
+
+/* ------------ Media Queries ------------- */
+
+@media screen and (min-width: 900px) {
+    .fat-footer-container {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+
+@media screen and (max-width: 1250px) {
+    .picturetext-box-two {
+        order: 2;
+    }
+    .image-two {
+        order: 1;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .text-picture, .header-container, .fat-footer {
+        width: 100%; /* Container takes full width on small screens */
+    }
+}
